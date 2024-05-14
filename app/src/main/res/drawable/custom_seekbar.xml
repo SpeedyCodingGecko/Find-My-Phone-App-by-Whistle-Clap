@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="20dp" />
+            <solid android:color="#E2E1FF" /> <!-- પ્રોગ્રેસ બારની પિછલી રંગ -->
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="20dp" />
+                <solid android:color="@color/blue_border" /> <!-- પ્રોગ્રેસ બારની આગળની રંગ -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.toolapp.findphonebyclapandwhistle.MyActivities.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/iv_btn_language"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:src="@drawable/iv_btn_language"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:maxWidth="@dimen/_180sdp"
+            android:maxLines="2"
+            android:text="@string/Clap_to_find_your_phone"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_back_btn"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:src="@drawable/ic_back_btn" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_flashlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/setting_container_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/flashlight" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/arial"
+                        android:text="@string/Flashlight"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_flash"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="end"
+                        android:theme="@style/SCBSwitch"
+                        app:track="@drawable/track_backgrounds" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+
+                    <RadioGroup
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:id="@+id/flash_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right">
+
+                        <RadioButton
+                            android:id="@+id/flash_default"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/blue_border"
+                            android:fontFamily="@font/arial"
+                            android:layoutDirection="rtl"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:text="@string/Default"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:visibility="gone"
+                            android:id="@+id/flash_disco_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/arial"
+                            android:layoutDirection="rtl"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:text="@string/Disco_Mode"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:visibility="gone"
+                            android:id="@+id/flash_sos_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/arial"
+                            android:layoutDirection="rtl"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:text="@string/SOS_Mode"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_260sdp"
+                android:layout_below="@id/ll_flashlight"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/setting_container_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/vibrate" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/arial"
+                        android:text="@string/Vibrate"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_vibrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="end"
+                        android:theme="@style/SCBSwitch"
+                        app:track="@drawable/track_backgrounds" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radio_vibrate_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right">
+
+                        <RadioButton
+                            android:id="@+id/vibrate_default"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/blue_border"
+                            android:fontFamily="@font/arial"
+                            android:layoutDirection="rtl"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/Default"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/vibrate_strong"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/arial"
+                            android:layoutDirection="rtl"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/Strong_Vibration"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/vibrate_heartbeat"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/arial"
+                            android:layoutDirection="rtl"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/Heartbeat"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/vibrate_tiktok"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/arial"
+                            android:layoutDirection="rtl"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/Ticktock"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

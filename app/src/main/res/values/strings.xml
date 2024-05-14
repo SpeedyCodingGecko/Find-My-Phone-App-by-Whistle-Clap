@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Find Phone</string>
+
+
+
+
+    <string name="starting_1_text1">Find my phone by clap</string>
+    <string name="starting_1_text2">Please grant the following permission to find your phone\\nin room by whistle or clap with this nice tools</string>
+    <string name="recode_Permission">Record Permission</string>
+    <string name="Continue">CONTINUE</string>
+    <string name="Select_Language">Select Language</string>
+    <string name="next">Next</string>
+    <string name="go">Go</string>
+    <string name="clap">Clap</string>
+    <string name="onbording1_txt2">to find the lost phone easily</string>
+    <string name="onbording2_txt1">Flashlight to on in dark</string>
+    <string name="onbording2_txt2">to find the lost phone easily</string>
+    <string name="onbording3_txt1">What are you waiting for?</string>
+    <string name="onbording3_txt2">Let’s Start</string>
+    <string name="Clap_to_find_your_phone">Clap to find your phone</string>
+    <string name="How_To_Use">How To Use</string>
+    <string name="Cat_meowing">Meow</string>
+    <string name="Dog_barking">Police</string>
+    <string name="police">Police</string>
+    <string name="Hey_stay_here">Excuse Me</string>
+    <string name="Whistle">Whistle</string>
+    <string name="Hello">Hello</string>
+    <string name="Car_honk">Car honk</string>
+    <string name="Door_bell">Door bell</string>
+    <string name="Party_horn">Party horn</string>
+    <string name="Police_whistle">Police whistle</string>
+    <string name="Cavalry">Cavalry</string>
+    <string name="Piano">Piano</string>
+    <string name="Clap">Clap</string>
+    <string name="Flashlight">Flashlight</string>
+    <string name="Default">Default</string>
+    <string name="Disco_Mode">Disco Mode</string>
+    <string name="SOS_Mode">SOS Mode</string>
+    <string name="Vibrate">Vibrate</string>
+    <string name="Strong_Vibration">Strong Vibration</string>
+    <string name="Heartbeat">Heartbeat</string>
+    <string name="Ticktock">Ticktock</string>
+    <string name="Help_you_find_your_phone_by_clap">Help you find your phone by clap !</string>
+    <string name="Click_the_activate_button">Press the activate button</string>
+    <string name="Double_clap_when_you_cant_find_your_phone">Double clap when you cannot find your phone</string>
+    <string name="The_app_will_detect_the_clapping_sound_and_start_ringing">The app will detect the clap sound and start ringing</string>
+    <string name="Before_activating">Before activating, you can set the flashlight,adjust the volume and select alarm sound...</string>
+    <string name="Sound">Sound</string>
+    <string name="Volume">Volume</string>
+    <string name="Duration">Time</string>
+    <string name="Apply">Apply</string>
+    <string name="Select_country">Select country</string>
+    <string name="Select_Age">Select Age</string>
+    <string name="Select_Gender">Select Gender</string>
+    <string name="Active">Active</string>
+    <string name="DeActive">Deactive</string>
+    <string name="Lets_Start">Let’s Start</string>
+    <string name="Lets_Start2">Blow up \nwhistle or clap</string>
+    <string name="rate_us">Rate us</string>
+    <string name="share_app">Share App</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="termstext">I Agree to the <font color = "#5B58FC">Terms Of Service</font></string>
+    <string name="Are_You_Sure_Want_to_Exit">Sure to Exit?</string>
+
+
+        <string name="halfrectangle">halfrectangle</string>
+        <string name="find_my_phone_by_clap">Find my phone by clap</string>
+        <string name="please_grant_the_following_permission_to_find_your_phone_in_room_by_whistle_or_clap_with_this_nice_tool">Please grant the following permission to find your \nphone in room by whistle or clap with this nice tools</string>
+        <string name="record_permission">Record Permission</string>
+        <string name="mask">mask</string>
+        <string name="whistle">whistle</string>
+        <string name="whistlee">Whistle</string>
+        <string name="find_phone_through_whistle">Find phone through whistle</string>
+        <string name="find_phone_through_whistlee">Find phone \nthrough whistle</string>
+        <string name="mask_group">Mask</string>
+        <string name="find_phone_through_clap">Find phone \nthrough clap</string>
+        <string name="select_sound">Select Sound</string>
+        <string name="select_sounds">Select Sound</string>
+        <string name="sounds">Select Sound</string>
+        <string name="cat"><b>Cat</b></string>
+        <string name="sound">Sound</string>
+        <string name="flash">Flash</string>
+        <string name="time">Time</string>
+        <string name="_15s">15s</string>
+        <string name="_1m">1m</string>
+        <string name="_30s">30s</string>
+        <string name="_2m">2m</string>
+        <string name="timee">Time</string>
+        <string name="_15second">15s</string>
+        <string name="_30send">30s</string>
+        <string name="mntone">1m</string>
+        <string name="_2mnt">2m</string>
+        <string name="apply">Apply</string>
+        <string name="do_you_want_to_exit">Do you \nwant to exit?</string>
+
+        <string name="setting">Setting</string>
+        <string name="vibrate">Vibrate</string>
+        <string name="strong_vibration">Strong Vibration</string>
+        <string name="default_option">Default</string>
+        <string name="heartbeat">Heartbeat</string>
+        <string name="ticktock">Ticktock</string>
+        <string name="v">Vibrate</string>
+        <string name="vibratee">Vibrate</string>
+        <string name="vibrate_layout">Vibrate</string>
+        <string name="theme">Theme</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+    <!-- Admonbads-->
+    <string name="appopen">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="nativead">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="interad">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="settings">Settings</string>
+    <string name="more_apps">More Apps</string>
+    <string name="back">Back</string>
+</resources>

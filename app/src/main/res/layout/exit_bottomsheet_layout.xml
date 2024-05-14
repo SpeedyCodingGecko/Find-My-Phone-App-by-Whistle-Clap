@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottomsheet_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:src="@drawable/thankyou" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/_15ssp"
+        android:layout_marginRight="@dimen/_15ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:text="@string/Are_You_Sure_Want_to_Exit"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rv_btn_yes"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/continue_btn">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/yes"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_btn_no"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/continue_btn">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:textColor="@color/text_black"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
