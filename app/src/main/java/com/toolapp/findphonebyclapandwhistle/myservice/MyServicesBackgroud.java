@@ -17,7 +17,7 @@ import android.util.Log;
 import androidx.core.app.NotificationCompat;
 import androidx.core.os.HandlerCompat;
 import com.toolapp.findphonebyclapandwhistle.MyTools.MySharedPreferences;
-import com.toolapp.findphonebyclapandwhistle.MyActivities.ActivityAlertClass;
+import com.toolapp.findphonebyclapandwhistle.MyActivities.AlertActivityClass;
 import com.toolapp.findphonebyclapandwhistle.R;
 import com.toolapp.findphonebyclapandwhistle.functions.ModelForNameConst;
 import com.toolapp.findphonebyclapandwhistle.functions.ServicesForConst;
@@ -99,9 +99,9 @@ public class MyServices extends Service {
                                 Log.w("Score", category.getScore() + "");
                                 Log.w("Index", category.getIndex() + "");
                                 if (preferences.getBoolean("active", false)) {
-                                    if (!ActivityAlertClass.ON_SCREEN) {
-                                        ActivityAlertClass.ON_SCREEN = true;
-                                        Intent intent = new Intent(MyServices.this, ActivityAlertClass.class);
+                                    if (!AlertActivityClass.ON_SCREEN) {
+                                        AlertActivityClass.ON_SCREEN = true;
+                                        Intent intent = new Intent(MyServices.this, AlertActivityClass.class);
                                         intent.setFlags(268435456);
                                         MyServices.this.startActivity(intent);
                                     }
