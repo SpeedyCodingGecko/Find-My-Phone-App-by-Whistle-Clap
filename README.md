@@ -12,4 +12,4 @@ Features:
 •	Advertisement support – for extra marks only I would never put ads in my real app 😊
 •	Support for ‘rate us’, ‘share app’, and ‘privacy policy’ buttons on initial screen – to be configured if the app were to be deployed to play store 
 
-20208147 Joshua Owen
+20208147
